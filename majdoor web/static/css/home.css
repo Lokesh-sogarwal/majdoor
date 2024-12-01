@@ -1,0 +1,343 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* navbar */
+nav {
+    position: fixed;
+    /* Fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    /* Adjust height as needed */
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* Horizontal padding for spacing */
+    z-index: 1000;
+    /* Ensure it stays on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.logo {
+    margin-left: 30px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.links a {
+    color: black;
+    ;
+}
+
+.links a:hover {
+    color: rgba(0, 0, 0, 0.474);
+}
+
+.signin button {
+
+    padding: 5px;
+    width: 90px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.signin button:hover {
+    background-color: rgba(0, 0, 0, 0.553);
+    color: white;
+    border: 2px solid white;
+}
+
+/* Main box start */
+.mian {
+    margin-top: 8vh;
+    padding: 20px;
+    position: absolute;
+}
+
+.photo img {
+    height: 90vh;
+    position: relative;
+    /* opacity: .90; */
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    top: 8vh;
+    /* background-color: black; */
+    /* opacity: 0.25; */
+
+}
+
+.details {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.content h1 {
+    color: orange;
+    font-size: 50px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.content p {
+    color: orange;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.email {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.email input {
+    width: 550px;
+    height: 5vh;
+    border-radius: 8px;
+    padding-left: 30px;
+    color: black;
+}
+
+.email button {
+    /* justify-content: left; */
+    padding: 9px;
+    width: 120px;
+    border-radius: 8px;
+    background-color: rgba(255, 166, 0, 0.762);
+}
+
+.email button:hover {
+    background-color: rgba(0, 0, 0, 0.553);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+    /* Space between slides */
+    padding: 20px;
+}
+
+.box2 {
+    background-color: whitesmoke;
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+    /* Space inside the box */
+    border-radius: 8px;
+    /* Rounded corners for each box */
+    font-weight: bold;
+    /* Bold text for visibility */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Optional shadow */
+}
+
+/* .box2:hover {
+    background-color: rgba(255, 166, 0, 0.229);
+} */
+
+.box2 img {
+    border-radius: 10px;
+}
+
+.box2 p {
+    cursor: pointer;
+}
+
+.box {
+    background-color: black;
+    position: relative;
+    opacity: 0.5;
+    height: 40vh;
+    width: 85%;
+    border-radius: 8px;
+}
+
+h1 {
+    padding: 20px;
+    text-align: center;
+    color: orange;
+    font-size: 35px;
+}
+
+#car {
+    padding-top: 20px;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.784);
+    color: white;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-container {
+    width: 90%;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    /* Allow Swiper to handle slide widths */
+}
+
+.about {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 50px 20px;
+    text-align: center;
+    /* Center-align text */
+
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Subtle shadow for a raised effect */
+    margin: 40px auto;
+    width: 90%;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    /* Large, bold heading */
+    color: orange;
+    /* Dark color for contrast */
+    margin-bottom: 20px;
+    /* Space below the heading */
+    font-family: 'Arial', sans-serif;
+    /* Clean and modern font */
+}
+
+.about p {
+    font-size: 1.2em;
+    /* Readable font size */
+    line-height: 1.6;
+    /* Increase line spacing for readability */
+    color: #555;
+    /* Subtle text color */
+    font-family: 'Roboto', sans-serif;
+    /* Professional and clean font */
+}
+
+.about span {
+    font-weight: bold;
+    /* Highlighted text for emphasis */
+    color: orange;
+    /* Accent color */
+    font-size: 25px;
+}
+
+.about span:hover {
+    text-decoration: underline;
+    /* Underline on hover for interactivity */
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: white;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide1 {
+  text-align: center;
+  font-size: 18px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review{
+    width: 95%;
+    margin: 50px;
+
+}
+#happy{
+    padding-left: 50px;
+    font-size: 40px;
+    color: orange;
+    text-decoration: underline;
+
+}
+.footer{
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.right p , .left p{
+    font-size: 17px;
+}
+.right span , .left span{
+    font-size: 20px;
+    color: orange;
+}
+

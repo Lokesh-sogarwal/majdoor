@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="static/assets/logo.png" alt="" width="50px">
+            <p>
+                Maj Door-India</p>
+        </div>
+        <div class="links">
+            <a href="#home" class="smooth-scroll">Home</a>
+            <a href="#about-us" class="smooth-scroll">About-us</a>
+            <a href="#available" class="smooth-scroll">Available-Services</a>
+            <a href="#support" class="smooth-scroll">Support</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search..">
+            <button>Search</button>
+        </div>
+        <div class="signin">
+            <a href="/logout"> <button>Log-Out</button></a>
+
+        </div>
+    </nav>
+    <div class="main" id="home">
+        <div class="content">
+            <span>Provide Every {{role}}</span>
+            <p> services at your Doorstep</p>
+            <div class="se" id="available">
+                <span>Available-Services</span>
+                <div class="serv">
+                    <div class="img">
+                        <a href="#">
+                            <img src="static/assets/delivery.png" alt="" width="100px"> <span>Lifting & Shifting</span>
+                        </a>
+                    </div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="static/assets/tutor.png" alt="" width="100px"><span>Tutor</span>
+                        </a>
+                    </div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="static/assets/carwash.jpg" alt="" width="100px" height="95vh"> <span>Car
+                                Wash</span>
+                        </a>
+                    </div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="static/assets/carpainter.png" alt="" width="100px" height="95vh">
+                            <span>Carpenter</span>
+                        </a>
+                    </div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="static/assets/elec.png" alt="" width="100px"> <span>Electician</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="static/assets/index.png" alt="" width="750px" height="auto">
+        </div>
+    </div>
+    <h1 id='us'>Upcomming Services</h1>
+    <div class="features">
+
+        <div class="box2">
+            <a href="">
+                <img src="static/assets/cleaning.png" alt="" width="250px"> </a>
+            <p id="car">HouseKeeping serivces</p>
+
+        </div>
+        <div class="box2">
+            <a href="#">
+                <img src="static/assets/gym.png" alt="" width="200px"> </a>
+            <p>Gym Trainer</p>
+
+        </div>
+    </div>
+
+    <div class="about" id="about-us">
+        <h2>About Us</h2>
+        <p><span>At Maj Door-India</span>, we bring a wide range of expert services right to your doorstep. Whether you
+            need a carpenter for home repairs, a tutor for personalized lessons, a gym trainer to help you achieve your
+            fitness goals, or an electrician for all your electrical needs, we have you covered. Our mission is to make
+            life easier by connecting you with trusted professionals who are ready to assist whenever you need them.
+            Experience convenience, quality, and reliability – all from the comfort of your home.</p>
+        <span id="hash">#NoNeedToGoOut</span>
+    </div>
+    <h2 id="happy">Happy Users</h2>
+    <div class="review">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="static/assets/tweet1.jpg" alt="" width="700px" height="299vh"></div>
+                <div class="swiper-slide"><img src="static/assets/tweet2.webp" alt="" width="700px" height="299vh">
+                </div>
+                <div class="swiper-slide"><img src="static/assets/tweet3.webp" alt="" width="700px" height="299vh">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="footer" id="support">
+
+        <div class="right">
+
+            <p><span>Email :</span> abc@gmail.com</p>
+            <p> <span>Contact Number :</span> +1235456879</p>
+        </div>
+        <div class="left">
+            <p><span>Address :</span>
+                <br> Maj Door-India,delhi
+            </p>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="static/script/dashboard.js">
+
+</script>
+
+</html>

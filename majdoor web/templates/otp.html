@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/otp.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="static/assets/logo.png" alt="" width="50px">
+            Maj Door-India
+        </div>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="#">Support</a>
+        </div>
+    </nav>
+
+    <div class="container height-100 d-flex justify-content-center align-items-center">
+        <div class="position-relative">
+            <div class="card p-2 text-center">
+                <h6>Please enter the one time password <br> to verify your account</h6>
+                <div>
+                    <span>A code has been sent to</span>
+                    <small>{{email}}</small>
+                </div>
+                <form action="/otp" method="POST">
+                    <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2">
+                        <input class="m-2 text-center form-control rounded" type="text" id="first" name="first" maxlength="1" />
+                        <input class="m-2 text-center form-control rounded" type="text" id="second" name="second" maxlength="1" />
+                        <input class="m-2 text-center form-control rounded" type="text" id="third" name="third" maxlength="1" />
+                        <input class="m-2 text-center form-control rounded" type="text" id="fourth" name="fourth" maxlength="1" />
+                        <input class="m-2 text-center form-control rounded" type="text" id="fifth" name="fifth" maxlength="1" />
+                        <input class="m-2 text-center form-control rounded" type="text" id="sixth"  name="sixth" maxlength="1" />
+                    </div>
+                    <div class="mt-4"> <button class="btn btn-danger px-4 validate">Validate</button> </div>
+                </form>
+
+            </div>
+            <div class="card-2">
+                <div class="content d-flex justify-content-center align-items-center"> <span>Didn't get the code</span>
+                    <a href="/resend" class="text-decoration-none ms-3">Resend(1/3)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="static/script/otp.js"></script>
+
+</html>
